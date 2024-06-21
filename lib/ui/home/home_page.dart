@@ -11,8 +11,9 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(EnvConfig.appName),
       ),
-      body: const Center(
-        child: Text('Hello, World!'),
+      body: Center(
+        child: Text(
+            'Hello, World! The app is running in ${EnvConfig.appEnvironment} environment.'),
       ),
     );
   }
